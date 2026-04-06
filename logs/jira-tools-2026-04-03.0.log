@@ -1,0 +1,1013 @@
+2026-04-03 19:55:41 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 96145 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 19:55:41 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 19:55:41 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:55:41 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 19:55:41 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 19:55:41 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 19:55:41 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 19:55:42 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 19:55:42 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 19:55:42 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:55:42 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 19:55:42 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:55:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 736 ms
+2026-04-03 19:55:42 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 19:55:42 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14b48f39, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13d1f898, org.springframework.security.web.context.SecurityContextHolderFilter@3be46d9c, org.springframework.security.web.header.HeaderWriterFilter@49b9ba6a, org.springframework.web.filter.CorsFilter@16cf8438, org.springframework.security.web.authentication.logout.LogoutFilter@73d83141, com.jiratools.security.JwtAuthenticationFilter@1e76afeb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39c5a105, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@492fa72a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c87787d, org.springframework.security.web.session.SessionManagementFilter@289a4b90, org.springframework.security.web.access.ExceptionTranslationFilter@7507d96c, org.springframework.security.web.access.intercept.AuthorizationFilter@5b5b8730]
+2026-04-03 19:55:42 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 19:55:42 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 19:55:42 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.702 seconds (process running for 1.829)
+2026-04-03 19:59:34 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 98211 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 19:59:34 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 19:59:34 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 19:59:34 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 19:59:34 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 19:59:34 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 19:59:34 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 19:59:35 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 19:59:35 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 19:59:35 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 19:59:35 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 19:59:35 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 19:59:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 643 ms
+2026-04-03 19:59:35 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 19:59:35 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@93fb44, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@321c2a7, org.springframework.security.web.context.SecurityContextHolderFilter@1a3c4b3e, org.springframework.security.web.header.HeaderWriterFilter@7507d96c, org.springframework.web.filter.CorsFilter@4ef18604, org.springframework.security.web.authentication.logout.LogoutFilter@651cedfb, com.jiratools.security.JwtAuthenticationFilter@7ec08115, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3be46d9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41d877bb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14b48f39, org.springframework.security.web.session.SessionManagementFilter@59c08cf1, org.springframework.security.web.access.ExceptionTranslationFilter@410f53b2, org.springframework.security.web.access.intercept.AuthorizationFilter@31b650e9]
+2026-04-03 19:59:35 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 19:59:35 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 19:59:35 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.51 seconds (process running for 1.633)
+2026-04-03 19:59:38 [http-nio-8080-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 19:59:38 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 19:59:38 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 19:59:38 [http-nio-8080-exec-2] WARN  o.s.web.servlet.handler.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 20:00:13 [http-nio-8080-exec-5] ERROR c.j.common.exception.GlobalExceptionHandler - Internal server error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource auth/login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.jiratools.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-04-03 20:01:03 [http-nio-8080-exec-10] ERROR c.j.common.exception.GlobalExceptionHandler - Internal server error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource auth/login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.jiratools.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:54)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-04-03 20:02:08 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 99295 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:02:08 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:02:08 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:02:08 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:02:08 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:02:08 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:02:08 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:02:08 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:02:08 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:02:08 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:02:08 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:02:08 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:02:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 603 ms
+2026-04-03 20:02:08 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:02:09 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@878feb2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1818390b, org.springframework.security.web.context.SecurityContextHolderFilter@31e22365, org.springframework.security.web.header.HeaderWriterFilter@4b9fa2f, org.springframework.web.filter.CorsFilter@2a8dd942, org.springframework.security.web.authentication.logout.LogoutFilter@3dc2f14, com.jiratools.security.JwtAuthenticationFilter@604d28c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41bdaa81, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@799971ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67a38, org.springframework.security.web.session.SessionManagementFilter@452ec287, org.springframework.security.web.access.ExceptionTranslationFilter@6b86826a, org.springframework.security.web.access.intercept.AuthorizationFilter@31443680]
+2026-04-03 20:02:09 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:02:09 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-04-03 20:02:09 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-03 20:02:09 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-04-03 20:02:42 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 99904 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:02:42 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:02:42 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:02:42 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:02:42 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:02:42 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:02:42 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:02:43 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:02:43 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:02:43 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:02:43 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:02:43 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:02:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 621 ms
+2026-04-03 20:02:43 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:02:43 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d4a0671, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ab9c735, org.springframework.security.web.context.SecurityContextHolderFilter@53d87b2d, org.springframework.security.web.header.HeaderWriterFilter@b267745, org.springframework.web.filter.CorsFilter@3887c7d7, org.springframework.security.web.authentication.logout.LogoutFilter@1818390b, com.jiratools.security.JwtAuthenticationFilter@1511d157, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7323dce7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f68eec6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e4e60f5, org.springframework.security.web.session.SessionManagementFilter@39c5a105, org.springframework.security.web.access.ExceptionTranslationFilter@452ec287, org.springframework.security.web.access.intercept.AuthorizationFilter@c87787d]
+2026-04-03 20:02:43 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:02:43 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:02:43 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.423 seconds (process running for 1.541)
+2026-04-03 20:05:25 [http-nio-8080-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:05:25 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:05:25 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 20:05:25 [http-nio-8080-exec-2] WARN  o.s.web.servlet.handler.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 20:06:22 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 1442 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:06:22 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:06:22 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:06:22 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:06:22 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:06:22 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:06:22 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:06:23 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:06:23 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:06:23 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:06:23 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:06:23 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:06:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 624 ms
+2026-04-03 20:06:23 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:06:23 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a988299, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@878feb2, org.springframework.security.web.context.SecurityContextHolderFilter@b267745, org.springframework.security.web.header.HeaderWriterFilter@3c2dda7c, org.springframework.web.filter.CorsFilter@1e226bcd, org.springframework.security.web.authentication.logout.LogoutFilter@21698e5a, com.jiratools.security.JwtAuthenticationFilter@24a0c58b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ebf524, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41bdaa81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1818390b, org.springframework.security.web.session.SessionManagementFilter@30e143ff, org.springframework.security.web.access.ExceptionTranslationFilter@72e36677, org.springframework.security.web.access.intercept.AuthorizationFilter@73d83141]
+2026-04-03 20:06:23 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:06:23 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:06:23 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.445 seconds (process running for 1.571)
+2026-04-03 20:06:44 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:06:44 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:06:44 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 20:06:44 [http-nio-8080-exec-1] WARN  o.s.web.servlet.handler.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 20:07:52 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 2398 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:07:52 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:07:52 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:07:52 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:07:52 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:07:52 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:07:52 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:07:53 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:07:53 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:07:53 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:07:53 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:07:53 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:07:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 615 ms
+2026-04-03 20:07:53 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:07:53 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@683fe7b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b5b8730, org.springframework.security.web.context.SecurityContextHolderFilter@45f0038, org.springframework.security.web.header.HeaderWriterFilter@410f53b2, org.springframework.web.filter.CorsFilter@48cd319d, org.springframework.security.web.authentication.logout.LogoutFilter@3aca2579, com.jiratools.security.JwtAuthenticationFilter@2c2c3947, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a3c4b3e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4746fb8c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@93fb44, org.springframework.security.web.session.SessionManagementFilter@41bdaa81, org.springframework.security.web.access.ExceptionTranslationFilter@60e67c06, org.springframework.security.web.access.intercept.AuthorizationFilter@67a38]
+2026-04-03 20:07:53 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:07:53 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:07:53 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.539 seconds (process running for 1.665)
+2026-04-03 20:08:20 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:08:20 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:08:20 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 20:08:20 [http-nio-8080-exec-1] WARN  o.s.web.servlet.handler.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 20:09:11 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 3333 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:09:11 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:09:11 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:09:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:09:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:09:12 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:09:12 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:09:12 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:09:12 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:09:12 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:09:12 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:09:12 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:09:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 594 ms
+2026-04-03 20:09:12 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:09:12 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b5b8730, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@93fb44, org.springframework.security.web.context.SecurityContextHolderFilter@289a4b90, org.springframework.security.web.header.HeaderWriterFilter@265287ec, org.springframework.web.filter.CorsFilter@6f38f084, org.springframework.security.web.authentication.logout.LogoutFilter@4ba13fed, com.jiratools.security.JwtAuthenticationFilter@4a62062a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4746fb8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3be46d9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@321c2a7, org.springframework.security.web.session.SessionManagementFilter@799971ac, org.springframework.security.web.access.ExceptionTranslationFilter@2bc59ab7, org.springframework.security.web.access.intercept.AuthorizationFilter@7ef4aceb]
+2026-04-03 20:09:13 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:09:13 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:09:13 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.395 seconds (process running for 1.51)
+2026-04-03 20:09:35 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:09:35 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:09:35 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 20:09:35 [http-nio-8080-exec-1] WARN  o.s.web.servlet.handler.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 20:12:05 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 4636 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:12:05 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:12:05 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:12:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:12:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:12:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:12:05 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:12:05 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:12:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:12:05 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:12:05 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:12:05 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:12:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 619 ms
+2026-04-03 20:12:05 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:12:06 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b5b8730, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@93fb44, org.springframework.security.web.context.SecurityContextHolderFilter@289a4b90, org.springframework.security.web.header.HeaderWriterFilter@265287ec, org.springframework.web.filter.CorsFilter@6f38f084, org.springframework.security.web.authentication.logout.LogoutFilter@4ba13fed, com.jiratools.security.JwtAuthenticationFilter@4a62062a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4746fb8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3be46d9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@321c2a7, org.springframework.security.web.session.SessionManagementFilter@799971ac, org.springframework.security.web.access.ExceptionTranslationFilter@2bc59ab7, org.springframework.security.web.access.intercept.AuthorizationFilter@7ef4aceb]
+2026-04-03 20:12:06 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:12:06 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:12:06 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.422 seconds (process running for 1.54)
+2026-04-03 20:12:31 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:12:31 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:12:31 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 20:12:31 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/auth/login, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:12:31 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Path is whitelisted, allowing: /api/auth/login
+2026-04-03 20:12:31 [http-nio-8080-exec-1] WARN  o.s.web.servlet.handler.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 20:13:16 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 5394 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:13:16 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:13:16 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:13:16 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:13:16 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:13:16 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:13:16 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:13:16 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:13:16 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:13:16 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:13:16 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:13:16 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:13:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 587 ms
+2026-04-03 20:13:16 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:13:17 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b5b8730, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@93fb44, org.springframework.security.web.context.SecurityContextHolderFilter@289a4b90, org.springframework.security.web.header.HeaderWriterFilter@265287ec, org.springframework.web.filter.CorsFilter@6f38f084, org.springframework.security.web.authentication.logout.LogoutFilter@4ba13fed, com.jiratools.security.JwtAuthenticationFilter@4a62062a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4746fb8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3be46d9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@321c2a7, org.springframework.security.web.session.SessionManagementFilter@799971ac, org.springframework.security.web.access.ExceptionTranslationFilter@2bc59ab7, org.springframework.security.web.access.intercept.AuthorizationFilter@7ef4aceb]
+2026-04-03 20:13:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:13:17 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:13:17 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.391 seconds (process running for 1.507)
+2026-04-03 20:13:42 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:13:42 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:13:42 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 20:13:42 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/auth/login, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:13:42 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Path is whitelisted, allowing: /api/auth/login
+2026-04-03 20:13:42 [http-nio-8080-exec-1] WARN  o.s.web.servlet.handler.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 20:14:25 [http-nio-8080-exec-3] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/plan/projects, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:14:25 [http-nio-8080-exec-3] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - No valid auth header, continuing: /api/plan/projects
+2026-04-03 20:14:59 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 6424 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:14:59 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:14:59 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:14:59 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:14:59 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:14:59 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:14:59 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:14:59 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:14:59 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:14:59 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:14:59 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:14:59 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:14:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 593 ms
+2026-04-03 20:14:59 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:15:00 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45b8bbbf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1df06ecd, org.springframework.security.web.context.SecurityContextHolderFilter@3f908bc0, org.springframework.security.web.header.HeaderWriterFilter@556aed22, org.springframework.web.filter.CorsFilter@2322e56f, org.springframework.security.web.authentication.logout.LogoutFilter@7c682e26, com.jiratools.security.JwtAuthenticationFilter@57927bc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26cdd4af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@707f4647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@323efafe, org.springframework.security.web.session.SessionManagementFilter@3359c3f6, org.springframework.security.web.access.ExceptionTranslationFilter@7227926b, org.springframework.security.web.access.intercept.AuthorizationFilter@1c788d08]
+2026-04-03 20:15:00 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:15:00 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:15:00 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.382 seconds (process running for 1.498)
+2026-04-03 20:15:27 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:15:27 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:15:27 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-03 20:15:27 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/auth/login, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:15:27 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Path is whitelisted, allowing: /api/auth/login
+2026-04-03 20:15:27 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/auth/login, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:15:27 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Path is whitelisted, allowing: /api/auth/login
+2026-04-03 20:15:27 [http-nio-8080-exec-1] ERROR c.j.common.exception.GlobalExceptionHandler - Internal server error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource auth/login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.jiratools.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.jiratools.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-04-03 20:16:26 [main] INFO  com.jiratools.JiraToolsApplication - Starting JiraToolsApplication using Java 17.0.12 with PID 7224 (/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes started by maymay in /Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend)
+2026-04-03 20:16:26 [main] DEBUG com.jiratools.JiraToolsApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 20:16:26 [main] INFO  com.jiratools.JiraToolsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 20:16:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-03 20:16:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-03 20:16:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/AccessRuleMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/GitlabDataMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCommentMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/JiraCountMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/ProjectMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/RobotConfigMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/TaskRecordMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserInfoMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/maymay/Documents/project/jiratoolsProject2/jira-tools-backend/target/classes/com/jiratools/mapper/UserMapper.class]
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'accessRuleMapper' and 'com.jiratools.mapper.AccessRuleMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gitlabDataMapper' and 'com.jiratools.mapper.GitlabDataMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCommentMapper' and 'com.jiratools.mapper.JiraCommentMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jiraCountMapper' and 'com.jiratools.mapper.JiraCountMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'projectMapper' and 'com.jiratools.mapper.ProjectMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'robotConfigMapper' and 'com.jiratools.mapper.RobotConfigMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'taskRecordMapper' and 'com.jiratools.mapper.TaskRecordMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.jiratools.mapper.UserInfoMapper' mapperInterface
+2026-04-03 20:16:26 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.jiratools.mapper.UserMapper' mapperInterface
+2026-04-03 20:16:26 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-03 20:16:26 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:16:26 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 20:16:26 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 20:16:26 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2026-04-03 20:16:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 602 ms
+2026-04-03 20:16:26 [main] DEBUG com.jiratools.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-04-03 20:16:27 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57927bc9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@323efafe, org.springframework.security.web.context.SecurityContextHolderFilter@26cdd4af, org.springframework.security.web.header.HeaderWriterFilter@19d3f6ad, org.springframework.web.filter.CorsFilter@48cd319d, org.springframework.security.web.authentication.logout.LogoutFilter@340fc1aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b8a0d03, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54f373d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32dbca45, org.springframework.security.web.session.SessionManagementFilter@45b27ad3, org.springframework.security.web.access.ExceptionTranslationFilter@556aed22, org.springframework.security.web.access.intercept.AuthorizationFilter@2a99fa07]
+2026-04-03 20:16:27 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-03 20:16:27 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2026-04-03 20:16:27 [main] INFO  com.jiratools.JiraToolsApplication - Started JiraToolsApplication in 1.46 seconds (process running for 1.591)
+2026-04-03 20:16:51 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 20:16:51 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 20:16:51 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-04-03 20:16:51 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/auth/login, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:16:51 [http-nio-8080-exec-1] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Path is whitelisted, allowing: /api/auth/login
+2026-04-03 20:16:51 [http-nio-8080-exec-1] ERROR c.j.common.exception.GlobalExceptionHandler - Internal server error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource auth/login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.jiratools.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-04-03 20:17:28 [http-nio-8080-exec-2] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/auth/login, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:17:28 [http-nio-8080-exec-2] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Path is whitelisted, allowing: /api/auth/login
+2026-04-03 20:17:28 [http-nio-8080-exec-2] ERROR c.j.common.exception.GlobalExceptionHandler - Internal server error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource auth/login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.jiratools.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-04-03 20:18:11 [http-nio-8080-exec-3] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/v3/api-docs, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:18:11 [http-nio-8080-exec-3] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - No valid auth header, continuing: /api/v3/api-docs
+2026-04-03 20:18:11 [http-nio-8080-exec-3] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 219 ms
+2026-04-03 20:18:48 [http-nio-8080-exec-4] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - Request URI: /api/actuator/health, WhiteList: [/api/auth/**, /swagger-ui/**, /swagger-ui.html, /v3/api-docs/**, /swagger-resources/**, /webjars/**]
+2026-04-03 20:18:48 [http-nio-8080-exec-4] INFO  com.jiratools.security.JwtAuthenticationFilter - JWT Filter - No valid auth header, continuing: /api/actuator/health
+2026-04-03 20:18:48 [http-nio-8080-exec-4] ERROR c.j.common.exception.GlobalExceptionHandler - Internal server error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource actuator/health.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.jiratools.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
