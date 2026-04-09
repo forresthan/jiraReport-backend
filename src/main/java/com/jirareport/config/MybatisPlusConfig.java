@@ -36,13 +36,24 @@ public class MybatisPlusConfig {
         return new MetaObjectHandler() {
             @Override
             public void insertFill(MetaObject metaObject) {
-                this.strictInsertFill(metaObject, "createTime", LocalDateTime.class, LocalDateTime.now());
-                this.strictInsertFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now());
+                LocalDateTime now = LocalDateTime.now();
+                // 不用 strictInsertFill：子类继承 BaseEntity 时 getGetterType(createdAt) 可能为 null，导致跳过填充
+                if (metaObject.hasSetter("createdAt") && metaObject.getValue("createdAt") == null) {
+                    metaObject.setValue("createdAt", now);
+                }
+                if (metaObject.hasSetter("updatedAt") && metaObject.getValue("updatedAt") == null) {
+                    metaObject.setValue("updatedAt", now);
+                }
+                if (metaObject.hasSetter("deleted") && metaObject.getValue("deleted") == null) {
+                    metaObject.setValue("deleted", 0);
+                }
             }
 
             @Override
             public void updateFill(MetaObject metaObject) {
-                this.strictUpdateFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now());
+                if (metaObject.hasSetter("updatedAt")) {
+                    metaObject.setValue("updatedAt", LocalDateTime.now());
+                }
             }
         };
     }
