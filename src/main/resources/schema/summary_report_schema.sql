@@ -79,3 +79,19 @@ ON DUPLICATE KEY UPDATE
     style = VALUES(style),
     preview_meta = VALUES(preview_meta),
     sort_order = VALUES(sort_order);
+
+CREATE TABLE IF NOT EXISTS ppt_html_template (
+    id                  BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    owner_id            VARCHAR(64)     NOT NULL COMMENT 'JWT userId',
+    name                VARCHAR(255)      NOT NULL,
+    description         VARCHAR(2000)              DEFAULT NULL,
+    html_content        LONGTEXT                 DEFAULT NULL COMMENT '含占位符与样式的 HTML 模板',
+    meta_json           JSON                     DEFAULT NULL COMMENT '槽位、主题色、Markdown 角色等',
+    original_file_name  VARCHAR(512)             DEFAULT NULL,
+    status              VARCHAR(32)     NOT NULL DEFAULT 'active' COMMENT 'active|archived',
+    created_at          DATETIME        NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at          DATETIME        NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    deleted             TINYINT         NOT NULL DEFAULT 0,
+    KEY idx_owner (owner_id),
+    KEY idx_owner_updated (owner_id, updated_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='上传 PPT 转 HTML 报告模板';
